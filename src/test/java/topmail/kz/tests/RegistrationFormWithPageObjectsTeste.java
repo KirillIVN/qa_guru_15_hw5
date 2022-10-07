@@ -7,7 +7,7 @@ import topmail.kz.pages.RegistrationFormPage;
 
 
 
-public class RegistrationFormWithPageObjectsTaste {
+public class RegistrationFormWithPageObjectsTeste {
 
     RegistrationFormPage registrationFormPage = new RegistrationFormPage();
 

@@ -8,7 +8,7 @@ public class ResultsTableComponent {
 
     private final static String TITLE_TEXT = "Thanks for submitting the form";
 
-    public ResultsTableComponent checkModal (){
+    public ResultsTableComponent checkModal(){
         $(".modal-dialog modal-lg).shouldHave(appear");
         $("#example-modal-sizes-title-lg").shouldHave(text(TITLE_TEXT));
 

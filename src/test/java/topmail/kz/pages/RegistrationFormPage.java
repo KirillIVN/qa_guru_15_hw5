@@ -34,7 +34,7 @@ public class RegistrationFormPage {
         }
 
     //input First name
-    public RegistrationFormPage setFirstName (String value) {
+    public RegistrationFormPage setFirstName(String value) {
         firstNameInput.setValue(value);
 
         return this;
@@ -46,13 +46,13 @@ public class RegistrationFormPage {
         return this;
     }
     //input Email name
-    public RegistrationFormPage setEmail (String value) {
+    public RegistrationFormPage setEmail(String value) {
         emailInput.setValue(value);
 
         return this;
     }
     //set Gender
-    public RegistrationFormPage setGender () {
+    public RegistrationFormPage setGender() {
         $x("//*[@id='gender-radio-1']").parent().click();
 
         return this;
@@ -74,12 +74,14 @@ public class RegistrationFormPage {
     public RegistrationFormPage setSubject(String value) {
         $x("//*[@id='subjectsInput']").setValue(value);
         $x("//*[@id='subjectsInput']").setValue(value).pressEnter();
+
         return this;
     }
     //set hobbies
     public RegistrationFormPage setHobbies() {
         $x("//*[@id='hobbies-checkbox-1']").parent().click();
         $x("//*[@id='hobbies-checkbox-3']").parent().click();
+
 
         return this;
     }
